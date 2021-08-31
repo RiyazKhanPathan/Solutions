@@ -5,7 +5,7 @@ class Node:
 
  
 
-class SingelLinkedList:
+class SinglelLinkedList:
     def __init__(self):
         self.nodeObject = None
         self.length = 0
