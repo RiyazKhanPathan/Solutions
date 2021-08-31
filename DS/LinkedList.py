@@ -40,11 +40,25 @@ class Sll:
         
     def delete(self,data):
         temp = self.nodeObject
+        prev = None
+        if temp is None:
+            print("Empty list")
+            return
         while temp.data is not data:
+            prev = temp
             temp = temp.next
-        temp.data = temp.next.data
-        temp.next = temp.next.next
+
+        if temp.next is not None:
+            temp.data = temp.next.data
+            temp.next = temp.next.next
+            
+        elif temp.next is None:
+            print("There's no data")
+            self.nodeObject = None
+        else: # handling last element
+            prev.next = None
         self.length-=1
+            
         
     def __iter__(self):
         curNode = self.nodeObject
@@ -68,10 +82,11 @@ l.append(1)
 l.append(2)
 l.append(3)
 l.insertAt(1,4)
-l.delete(4)
+# l.delete(4)
+# l.delete(3)
+# l.delete(2)
+l.delete(0)
+# l.delete(1)
 
 print("Length:",l.length)
-
- 
-
 l.display()
