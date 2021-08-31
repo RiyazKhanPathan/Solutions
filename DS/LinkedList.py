@@ -5,7 +5,7 @@ class Node:
 
  
 
-class Sll:
+class SingelLinkedList:
     def __init__(self):
         self.nodeObject = None
         self.length = 0
@@ -76,7 +76,7 @@ class Sll:
         #         print(temp.data)
         #         temp = temp.next
     
-l = Sll()   
+l = SingleLinkedList()   
 l.append(0)
 l.append(1)
 l.append(2)
