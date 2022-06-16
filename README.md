@@ -6,3 +6,4 @@
 4. Nth Day from given date(eg: The day after 12 days from given date)
 5. Grouping anagrams
 6. versionDecode '#'
+7. matrixRotation - Rotate a given matrix in clock-wise direction
