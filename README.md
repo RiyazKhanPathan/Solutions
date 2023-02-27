@@ -7,3 +7,4 @@
 5. Grouping anagrams
 6. versionDecode '#'
 7. matrixRotation - Rotate a given matrix in clock-wise direction
+8. steps - You have n bricks and you want to build a staircase with these bricks. The staircase consists of k rows where the ith row has exactly i bricks. The last row of the staircase may be incomplete. Given the integer n, return the number of complete rows of the staircase you will build.
